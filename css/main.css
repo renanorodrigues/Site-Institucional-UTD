@@ -1,0 +1,220 @@
+@font-face{
+	font-family: 'Quicksand-Regular';
+	src: url("../fontes/Quicksand/Quicksand-Regular.ttf");
+}
+
+body{font-family: 'Quicksand-Regular', sans-serif}
+ h1, h2, h3, h4, h5, h6 {font-family: 'Quicksand-Regular', sans-serif; font-weight: 500;}
+
+.border-curso {
+	border: 2px solid #235a4e
+}
+
+/* Configurações de botões */
+#btn-inscricao {background-color: #e0b041; color: #fff}
+#btn-inscricao:hover {background-color: #b67f00; color: white}
+
+/* Configurações gerais de texto e links */
+.link-style {text-decoration: none; font-weight: bold; color: #fff}
+.text-p {font-family: "Quicksand-Regular",sans-serif;}
+.text-p2 {font-size: 1.7em}
+.text-subtitle {color: #e0b041}
+.aspas {font-size: 20px; color: #fff; font-weight: bold;}
+.border-txt {border-bottom: 5px solid #e0b041}
+
+.display-3 {font-size: 3.3rem !important}
+
+/* Configurações dos ícones */
+.icon {
+	font-size: 50px; padding-bottom: 15px; color: #e0b041
+}
+.icon-section {font-size: 90px; color: #133f13}
+.icon-footer {font-size: 30px; padding: 0 6px; text-decoration: none; color: #fff;}
+
+.mostrar-curso {color: #e0b041}
+
+/* Configurações do header */
+
+#logo-gov {
+	width: 45%; height: auto; padding-top: 28px; 
+}
+
+/* Configurações dos sections */
+
+.section-bkg-color {
+	background-image: linear-gradient(90deg, #9bd8cc, #69ad9f, #4f7e74, #235a4e)
+}
+.section-bkg-color2 {
+	background-image: linear-gradient(90deg, #9bd8cc, #69ad9f)
+}
+
+.text-section {font-size: 1.2em; font-family: "Roboto-Thin", }
+
+.sectiontab{
+	padding-top: 15px;
+}
+
+.section-mod {
+	background-color: rgba(255,255,255,.5); height: 90%; padding: 8px
+}
+
+#utd-logo-section {width: 70%; height: auto}
+
+#section-title {position: relative; top: 200px;}
+
+/* Configurações do carousel */
+
+.carousel-ajust { height: 550px;}
+
+.subtitle {top: 200px}
+    
+.mr-direita {margin-left: auto !important;}
+
+/* Configurações das páginas dos cursos */
+
+.programmer{ padding-left: 7.5px ; padding-top: 10px;}
+.logica{ padding: 20px; text-align: center; }
+.deflog{ text-align: left; margin-top: 42px; }
+
+
+#page-modulos i{
+	color: #500;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+.tabela1 table {
+	font-size: 30px;
+
+}
+
+/* Configurações do parallax */
+
+.parallax {
+	background-image: url("../img/sedeUTD2.jpg"); min-height: 500px; 
+	background-attachment: fixed; background-position: center;
+    background-repeat: no-repeat; background-size: cover;
+}
+
+/* Backgrounds de cor */
+
+.footer-bkg-color {
+	background-color: #0e5132;
+}
+
+.footer-bkg-color2 {
+	background-color: #194819;
+}
+
+.footer-bkg-color3 {
+	background-color: #033327;
+}
+
+.bkg-blue{
+	background-color: blue;
+	
+	color: #fff;
+}
+
+.bkg-yellow{
+	background-color: yellow;
+	color: #000;
+}
+
+.bkg-green{
+	background-color: green;
+	
+	color: #fff;
+}
+
+.bkg-red{
+	background-color: red;
+	
+	color: #fff;
+}
+.bkg-gray{
+	background-color: rgba(0,0,0,.1);
+}
+
+.bkg-white{
+	background-color: #fff;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	
+	.test-img {
+		position: relative; top: 65px;
+	}
+
+	.img-cursos {
+		position: relative; top: 80px;
+	}
+}
+
+@media screen and (max-width: 991px){
+
+	.text-p h4, .text-p p {
+
+		text-align: justify;
+	}
+
+	img[src="img/laboratorio1_largo.jpeg"] {
+		float: right;
+	}
+
+	label[for="inasc"] {
+		padding-top: 13px;
+	}
+
+	div[id="conteudoNavbarSuportado"] span {
+		padding-left: 0px
+	}
+
+	#logo-gov {width: 250px; height: auto; padding-bottom: 20px}
+
+	#footer-naveg-mobile {padding-left: 4rem;}
+
+	#txt-infra {text-align: right;}
+}
+
+@media screen and (max-width: 767px){
+
+	.center-mobile {
+		text-align: center; justify-content: center !important;
+	}
+
+	.display-3 {font-size: 3.5rem}
+
+	.subtitle {top: 150px}
+
+	#section-title {top: 110px}	
+}
+
+@media screen and (max-width: 806px){
+
+	.subtitle {top: 70px}
+
+	.display-3 {font-size: 3.5rem}
+	.display-4 {font-size: 3rem}
+
+	.carousel-ajust {height: 357px;}
+
+	#section-title {top: 155px}	
+}
+
+@media screen and (max-width: 436px){
+
+	.subtitle {top: 30px}
+
+	.display-3 {font-size: 2.8rem}
+	.display-4 {font-size: 2.4rem}
+
+	#section-title {top: 130px}	
+}
+
+@media screen and (max-width: 435px){
+
+	.carousel-ajust {height: 288px}
+}

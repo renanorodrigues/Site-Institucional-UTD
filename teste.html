@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Matheus Piscioneri</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/jquery.js"></script>  
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#MostrarMensagem").click(MostrarMensagem);
+                $("#EsconderMensagem").click(EsconderMensagem);
+                $("#MostrarEsconderMensagem").click(MostrarEsconderMensagem);
+                $("#Exibir").click(Exibir);
+                });
+ 
+            function MostrarMensagem(){
+                $("#Mensagem").show();
+            }
+            function EsconderMensagem(){
+                $("#Mensagem").hide();
+            }
+            function MostrarEsconderMensagem(){
+                $("#Mensagem").toggle();
+            }
+            function Exibir(){
+                $("#Mensagem").toggle();
+            }
+        </script>
+
+        <style>
+            #mensagem {
+                width: 100px; height: 100px; background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" id="MostrarMensagem">Mostrar Mensagem</button>
+        <button type="button" id="EsconderMensagem">Esconder Mensagem</button>
+        <button type="button" id="MostrarEsconderMensagem">Mostrar e Esconder Mensagem</button>
+        <button type="button" id="Exibir">Exibir</button>
+ 
+        <div id="Mensagem" style="display:none">Mensagem de teste!</div>
+        <div id="Inform" style="display:none">Outra mensagem de teste!</div>
+    </body>
+</html>
