@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="bootstrap/css/main.css">
 	<link rel="shortcut icon" type="image/x-png" href="img/utd_favcon2.png">
 </head>
 <body>
@@ -71,48 +71,47 @@
 	</header>
 	
 	<section>
-		<div class="container pt-3">
-			<div class="row">
-				<h3 class="font-weight-bold">Inscrições</h3>
-			</div>
-			<div class="row">
+		<div class="container-fluid pt-3 pl-5">
+			<form action="dataBase.php" method="POST" class="pl-3">
+
+				<h3 class="font-weight-bold">Inscrições</h3><br>
 				<p>Preencha os dados abaixo para solicitação de matrícula</p>
-			</div>
-			<form>
+
 				<div class="form-group row mt-5">
-					<label for="iname" class="col-lg-1 col-form-label">Nome</label>
 					<div class="col-lg-3">
-						<input type="text" name="nname" id="iname" class="form-control" placeholder="Primeiro nome" !required>
+						<input type="text" name="nome" id="iname" class="form-control" placeholder="Primeiro nome" !required>
 					</div>
-					<label for="isobren" class="col-lg-1 mr-1 col-form-label">Sobrenome</label>
 					<div class="col-lg-3">
-						<input type="text" name="nname" id="isobren" class="form-control" placeholder="Sobrenome" !required>
+						<input type="text" name="sobrenome" id="isobren" class="form-control" placeholder="Sobrenome" !required>
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="iidade" class="col-lg-1">Idade</label>
 					<div class="col-lg-3">
-						<input class="form-control" type="number" name="nidade" id="iidade" min="16" placeholder="Sua idade" !required>
+						<input type="number" name="rg" class="form-control" placeholder="RG" !required>
 					</div>
-					<label for="inasc" class="col-lg-1 mr-1 mb-0">Nascimento</label>
 					<div class="col-lg-3">
-						<input class="form-control" type="date" name="nnasc" id="inasc" min="16" placeholder="Sua idade" !required>
+						<input type="number" name="cpf" class="form-control" placeholder="CPF" !required>
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="iemail" class="col-lg-1 col-form-label">E-mail</label>
-					<div class="col-lg-7">
-						<input type="email" name="nemail" id="iemail" class="form-control" placeholder="seuemail@mail.com" !required>
+					<div class="col-lg-3">
+						<input class="form-control" type="number" name="idade" id="iidade" min="16" placeholder="Sua idade" !required>
+					</div>
+					<div class="col-lg-3">
+						<input class="form-control" type="date" name="dataNascimento" id="inasc" min="16" placeholder="Sua idade" !required>
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="itel" class="col-lg-1 col-form-label">Telefone</label>
-					<div class="col-lg-3">
-						<input type="number" placeholder="(99)999999999" id="itel" class="form-control" !required>
+					<div class="col-lg-6">
+						<input type="email" name="email" id="iemail" class="form-control" placeholder="seuemail@mail.com" !required>
 					</div>
-					<label for="itel2" class="col-lg-1 col-form-label">Celular</label>
+				</div>
+				<div class="form-group row">
 					<div class="col-lg-3">
-						<input type="number" placeholder="(99)999999999" id="itel2" class="form-control" !required>
+						<input type="number" placeholder="(99)999999999" id="celular1" class="form-control" !required>
+					</div>
+					<div class="col-lg-3">
+						<input type="number" placeholder="(99)999999999" id="celular2" class="form-control" !required>
 					</div>
 				</div>
 				<button class="btn btn-primary" type="submit">Enviar</button>
